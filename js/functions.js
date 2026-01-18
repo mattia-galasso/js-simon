@@ -25,7 +25,7 @@ function countdownTime() {
     countdown.classList.add("d-none");
     numbersList.classList.add("d-none");
     answersForm.classList.remove("d-none");
-    userInstructions.innerText = "Inserisci i numeri visti in precedenza!";
+    userInstructions.innerText = "Inserire i numeri visti in precedenza!";
   } else {
     countdown.innerText = isCountdownTime;
     isCountdownTime--;
@@ -48,6 +48,6 @@ function handleCountdownFormSubmit(e) {
   }
 
   message.innerHTML = `Hai indovinato ${correctNumbers} Numeri! (${isCorrectNumbers.join(
-    ", "
+    ", ",
   )})`;
 }
